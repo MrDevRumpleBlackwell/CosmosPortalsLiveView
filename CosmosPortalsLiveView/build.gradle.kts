@@ -19,19 +19,6 @@ repositories {
 
 minecraft {
     mappings("official", "1.20.1")
-    
-    runs {
-        client {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            mods {
-                cosmosportals_liveview {
-                    source sourceSets.main
-                }
-            }
-        }
-    }
 }
 
 dependencies {
